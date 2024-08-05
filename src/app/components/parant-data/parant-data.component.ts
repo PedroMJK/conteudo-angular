@@ -9,4 +9,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ParantDataComponent {
   @Input() name: string = '';
+  @Input() userData!: {email: string, role: string};
+  // "!" garante para o typescript que o dado será iniciado.  Da mesma forma que string vazia no exemplo acima.
+  @Input() userHobbies!: string[];
+
 }

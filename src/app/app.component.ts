@@ -13,5 +13,13 @@ import { ParantDataComponent } from "./components/parant-data/parant-data.compon
 })
 export class AppComponent {
   userName = "Peter";  // Propiedade criada no componente pai para compartilhar
+
+  userData = {
+    email: "Peter@email.com",
+    role: "Developer",
+  } 
+
+  userHobbies = ["Tocar violão", " Estudar"," Ler "]
+
   title = 'conteudo-angular';
 }
